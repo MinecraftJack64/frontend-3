@@ -336,6 +336,9 @@ app.post('/disconnect_patient', checkLogin, function (req, res) {
         res.sendStatus(200);
     }
 });
+app.get('/', function(req, res){
+  res.send("Hello");
+})
 /*app.use('/welcome', (err, req, res, next)=>{
   console.log(err)
   res.redirect('/login')
